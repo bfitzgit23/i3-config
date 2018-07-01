@@ -1,0 +1,43 @@
+how ben sets up his i3 WM :)
+
+
+install Gentoo -
+
+
+emerge -av xorg-x11 xorg-drivers xterm xclock xterm twm xinit networkmanager nm-applet volumeicon pulseaudio alsa-lib alsa-utils alsa-plugins pavucontrol bluez bluez-firmware xfce4-terminamm
+
+install i3 file manager menu --
+
+emerge -av i3 i3 status dmenu thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman
+​
+install archive management
+
+emerge engrampa xarchiver unrar p7zip zip
+​
+install apps 
+
+emerge -av google-chrome cmus clementine spotify teamviewer firefox-bin rxvt-unicode zsh compton lxapperance
+
+git clone and setup i3 and zsh
+
+git clone https://github.com/bfitzgit23/i3-config.git
+
+copy i3 config file and i3status config to /home/user/.config/i3 and /home/user/.config/i3status
+
+copy compton config to /home/user/.config/ or /home/user/.config/compton
+
+setup zsh
+
+grab ohmyzsh from http://ohmyz.sh/ using commands from website and set agnoster zsh theme in ~/.zshrc
+
+grab powerline fonts from https://github.com/powerline/fonts and in terminal run - cd fonts and do sudo ./install.sh
+
+use flags for packages -
+
+x11-terms/rxvt-unicode 256-color blink fading-colors iso14755 pixbuf unicode3 xft
+www-client/w3m imlib
+media-sound/cmus cddb wma zsh-completion
+gnome-base/gvfs afp archive gnome-keyring gphoto2 ios mtp nfs
+​
+
+finish and enjoy!
