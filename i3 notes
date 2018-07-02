@@ -8,7 +8,7 @@ emerge -av xorg-x11 xorg-drivers xterm xclock xterm twm xinit networkmanager nm-
 
 install i3 file manager menu --
 
-emerge -av i3 i3 status dmenu thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman
+emerge -av i3 i3status dmenu thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman fontawesome
 ​
 install archive management
 
@@ -16,7 +16,7 @@ emerge engrampa xarchiver unrar p7zip zip
 ​
 install apps 
 
-emerge -av google-chrome cmus clementine spotify teamviewer firefox-bin rxvt-unicode zsh compton lxapperance
+emerge -av google-chrome ncmpcpp mpd cmus clementine spotify teamviewer firefox-bin rxvt-unicode zsh compton lxapperance
 
 git clone and setup i3 and zsh
 
@@ -28,7 +28,9 @@ copy compton config to /home/user/.config/ or /home/user/.config/compton
 
 setup zsh
 
-grab ohmyzsh from http://ohmyz.sh/ using commands from website and set agnoster zsh theme in ~/.zshrc
+grab ohmyzsh from http://ohmyz.sh/ using commands from website and set powerlvl9k zsh theme in ~/.zshrc
+
+https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-2
 
 grab powerline fonts from https://github.com/powerline/fonts and in terminal run - cd fonts and do sudo ./install.sh
 
