@@ -1,0 +1,45 @@
+How Ben setting up his i3wm.
+
+
+1. Installing Gentoo base system:
+
+    1.1 emerge -av xorg-x11 xorg-drivers xterm xclock xterm twm xinit networkmanager nm-applet volumeicon pulseaudio alsa-lib alsa-utils alsa-plugins pavucontrol bluez bluez-firmware xfce4-terminamm
+
+2. Installing File manager and other dependencies:
+
+    2.1 emerge -av i3 i3 status dmenu thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman
+    2.2 [Optional] ranger - ncursed style file manager
+​
+3. Install archive management:
+
+    3.1 emerge engrampa xarchiver unrar p7zip zip
+​
+4. Installing base Programs:
+
+4.1 emerge -av google-chrome cmus clementine spotify teamviewer firefox-bin rxvt-unicode zsh compton lxapperance
+
+|-5. git clone and setup i3 and zsh
+|
+|    5.1git clone https://github.com/bfitzgit23/i3-config.git
+|
+|    The Steps:
+|
+|    1. copy i3 config file and i3status config to /home/user/.config/i3 and /home/user/.config/i3status
+|
+|    2. copy compton config to /home/user/.config/ or /home/user/.config/compton
+|
+|    zsh and oh-my-zsh Setup:
+|
+|    1. grab ohmyzsh from http://ohmyz.sh/ using commands from website and set agnoster zsh theme in ~/.zshrc
+|
+|    2. grab powerline fonts from https://github.com/powerline/fonts and in terminal run - cd fonts and do sudo ./install.sh
+|
+|-6. Use flags for packages:
+
+1. x11-terms/rxvt-unicode 256-color blink fading-colors iso14755 pixbuf unicode3 xft
+2. www-client/w3m imlib
+3. media-sound/cmus cddb wma zsh-completion
+4. gnome-base/gvfs afp archive gnome-keyring gphoto2 ios mtp nfs
+​
+
+The hardwork is paid off. Enjoy your setup =)
